@@ -15,9 +15,6 @@ const activityDataSchema = new mongoose.Schema({
   example: [String],
 
 
-  
-  
-
 });
 
 const activityData = mongoose.model("activityData", dataSchema);
