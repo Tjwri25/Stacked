@@ -1,22 +1,21 @@
-// const mongoose = require("mongoose");
-// const Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-// const activityDataSchema = new mongoose.Schema({
-//   title: {
-//     type: String,
-//     required: true
-//   },
+const activityDataSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+  },
 
+  docs: [String],
 
-//   docs: [String],
+  learned: [String],
 
-//   learned: [String],
+  example: [String],
 
-//   example: [String],
+  line: [Integer],
+});
 
+const activityData = mongoose.model("activityData", dataSchema);
 
-// });
-
-// const activityData = mongoose.model("activityData", dataSchema);
-
-// module.exports = activityData;
+module.exports = activityData;
