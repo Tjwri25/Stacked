@@ -4,16 +4,19 @@ const Schema = mongoose.Schema;
 const activityDataSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true,
+    required: true
   },
 
   docs: [String],
 
-  learned: [String],
+  docs: [String],
 
-  example: [String],
+  introduced: [String],
 
-  line: [Integer],
+  used: [String],
+
+const activityData = mongoose.model("activityData", dataSchema);
+
 });
 
 const activityData = mongoose.model("activityData", dataSchema);
