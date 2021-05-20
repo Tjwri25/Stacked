@@ -1,3 +1,3 @@
-// module.exports = {
-//     activityData: require("./activityData")
-//   };
+module.exports = {
+    activityData: require("./activityData")
+  };

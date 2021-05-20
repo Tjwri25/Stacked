@@ -1,73 +1,39 @@
 import React from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-
-import ListItem from '@material-ui/core/ListItem';
-
-import ListItemText from '@material-ui/core/ListItemText';
+import Grid from '@material-ui/core/Grid';
+import OpenNav from "./openNav";
+import CloseNav from "./closeNav"
+import "./style.css"
 
 
+function Nav() {
+    return (
+<div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a className="navbar-brand" href="/">
+      <img src="https://user-images.githubusercontent.com/74884495/118894209-0bbbfb80-b8c1-11eb-8e5e-e09bddfefc2a.png" alt="" width="300" height="100" className="d-inline-block align-text-top"></img>
+      </a>
+    </nav>
 
-const useStyles = makeStyles({
-  list: {
-    width: 250,
-  },
-  fullList: {
-    width: 'auto',
-  },
-});
 
-export default function TemporaryDrawer() {
-  const classes = useStyles();
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
 
-    setState({ ...state, [anchor]: open });
-  };
+        <div>
+<div id="mySidenav" className="sidenav">
+  <a href="javascript:void(0)" className="closebtn" onClick={CloseNav}>&times;</a>
+  <a href="#">Search</a>
+  <a href="#">Articles</a>
+  <a href="#">Community Board</a>
+  <a href="#">Log In</a>
 
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {['Search', 'Articles', 'Community Board', 'Log In'].map((text, index) => (
-          <ListItem button key={text}>
+</div>
 
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+<span onClick={OpenNav}>open</span>
+</div>
 
-    </div>
-  );
 
-  return (
-    <div>
-      {['left'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
-    </div>
-  );
+</div>
+
+)
 }
+
+export default Nav
