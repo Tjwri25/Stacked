@@ -1,7 +1,7 @@
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 0px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -52,4 +52,17 @@
 .navbar {
     height: 100px;
     border-bottom: solid black 1px; 
+  
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hmbgrMenu {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
