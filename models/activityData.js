@@ -19,6 +19,6 @@ const activityData = mongoose.model("activityData", dataSchema);
 
 });
 
-const activityData = mongoose.model("activityData", dataSchema);
+const activityData = mongoose.model("activityData", activityDataSchema);
 
 module.exports = activityData;

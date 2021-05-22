@@ -1,11 +1,7 @@
 const mongoose = require("mongoose");
+const db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Stacked", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Stacked");
 
 const actData = [
   {
@@ -20,3 +16,15 @@ const actData = [
     ],
   },
 ];
+
+db.activityData
+  .remove({})
+  .then(() => db.activityData.collection.insertMany(actData))
+  .then((data) => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
