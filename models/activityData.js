@@ -9,8 +9,6 @@ const activityDataSchema = new mongoose.Schema({
 
   docs: [String],
 
-  docs: [String],
-
   introduced: [String],
 
   used: [String],
