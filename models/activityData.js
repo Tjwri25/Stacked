@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const activityDataSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: true,
   },
 
   docs: [String],
@@ -14,9 +14,6 @@ const activityDataSchema = new mongoose.Schema({
   introduced: [String],
 
   used: [String],
-
-const activityData = mongoose.model("activityData", dataSchema);
-
 });
 
 const activityData = mongoose.model("activityData", activityDataSchema);
