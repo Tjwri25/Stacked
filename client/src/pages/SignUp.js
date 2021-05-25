@@ -14,7 +14,7 @@ function SignUp() {
         <Row>
           <Col></Col>
           <Col xs="12" lg="6">
-            <Card id="loginCard">
+            <Card id="signupCard">
               <p id="loginTitle">
                 Please sign up to post to the &#123;Stacked&#125; Community Board
               </p>

@@ -73,6 +73,12 @@ h1 {
     font-weight: 600;
 }
 
+#signupCard {
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
 #nameSignup {
     text-align: center;
     margin-top: -20px;
