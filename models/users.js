@@ -4,17 +4,22 @@ const Schema = mongoose.Schema;
 const userDataSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true,
+    trim: true,
+    required: "Name is Required"
   },
 
   email: {
     type: String,
-    required: true,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
+    trim: true,
+    required: "Email is Required"
   },
 
   password: {
     type: String,
-    required: true,
+    trim: true,
+    validate: [({ length }) => length >= 6, "Password should be more than 6 characters."],
+    required: "Password is Required"
   },
 
 
