@@ -1,0 +1,39 @@
+body {
+    background-image: url("https://user-images.githubusercontent.com/74884495/119538746-a6e12500-bd48-11eb-8821-abf5d623ca74.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 
+h1 {
+    text-align: center;
+} */
+
+#homebody{
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight:700;
+}
+
+#homebody2 {
+    font-size: 100px;
+    color: black;
+    font-weight:700;
+}
+
+#searchbody{
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#searchbar {
+    padding: 30px !important;
+}
+
+#searchbutton{
+   justify-content: center;
+   background-color: teal;
+   color: black;
+   
+   width: 80px;
+
+}

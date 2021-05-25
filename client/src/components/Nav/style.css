@@ -10,7 +10,7 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  margin-top: 108px;
+  margin-top: 140px;
 }
 
 /* The navigation menu links */
@@ -50,8 +50,10 @@
 }
 
 .navbar {
-    height: 100px;
+    height: 140px;
+    width:50%;
     border-bottom: solid black 1px; 
+    background-color: black;
   
 }
 
@@ -63,6 +65,14 @@
 .hmbgrMenu {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: whitesmoke;
   margin: 6px 0;
+}
+
+h1 {
+  font-size: 30px !important;
+}
+
+.Form {
+  padding: 20px;
 }

@@ -2,10 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Nav from "./components/Nav"
-import Search from "./pages/search";
-import Articles from "./pages/articles";
-import CommunityBoard from "./pages/community-board";
-import Login from "./pages/login";
+import Home from "./pages/Home"
+import Search from "./pages/Search";
+import Articles from "./pages/Articles";
+import CommunityBoard from "./pages/CommunityBoard";
+import Login from "./pages/Login";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
           <Route exact path="/articles">
             <Articles />
           </Route>
-          <Route exact path="/community-board">
+          <Route exact path="/communityboard">
             <CommunityBoard />
           </Route>
           <Route exact path="/login">

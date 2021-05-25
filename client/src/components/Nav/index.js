@@ -6,10 +6,10 @@ import "./style.css";
 function Nav() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg navbar-dark">
         <a className="navbar-brand" href="/">
           <img
-            src="https://user-images.githubusercontent.com/74884495/118894209-0bbbfb80-b8c1-11eb-8e5e-e09bddfefc2a.png"
+            src="https://user-images.githubusercontent.com/74884495/119537012-de4ed200-bd46-11eb-8fcc-0a6f8252440f.png"
             alt=""
             width="300"
             height="100"
@@ -23,10 +23,11 @@ function Nav() {
           <a href="javascript:void(0)" className="closebtn" onClick={CloseNav}>
             &times;
           </a>
-          <a href="#">Search</a>
-          <a href="#">Articles</a>
-          <a href="#">Community Board</a>
-          <a href="#">Log In</a>
+          <a href="/">Home</a>
+          <a href="/search">Search</a>
+          <a href="/articles">Articles</a>
+          <a href="/communityboard">Community Board</a>
+          <a href="/login">Log In</a>
         </div>
 
         <span className="openbtn" onClick={OpenNav}>
