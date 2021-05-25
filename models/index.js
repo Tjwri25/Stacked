@@ -1,3 +1,4 @@
 module.exports = {
-    activityData: require("./activityData")
+    activityData: require("./activityData"),
+    users: require("./users")
   };

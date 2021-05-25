@@ -18,6 +18,7 @@ h1 {
     font-size: 100px;
     color: black;
     font-weight:700;
+    margin-bottom: 40px;
 }
 
 #searchbody{
@@ -36,4 +37,62 @@ h1 {
    
    width: 80px;
 
+}
+
+#loginCard {
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+#emailInput {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+#passwordInput {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#loginTitle {
+    padding: 20px;
+    font-weight: 600;
+}
+
+#loginSubmit {
+    background-color: teal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#inputTitle {
+    font-weight: 600;
+}
+
+#nameSignup {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#emailSignup {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#passwordSignup {
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+#signupSubmit {
+    background-color: teal;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

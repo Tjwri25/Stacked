@@ -7,6 +7,7 @@ import Search from "./pages/Search";
 import Articles from "./pages/Articles";
 import CommunityBoard from "./pages/CommunityBoard";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login />
+          </Route>
+          <Route exact path="/signup">
+            <SignUp />
           </Route>
         </Switch>
       </div>
