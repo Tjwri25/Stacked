@@ -26,7 +26,6 @@ function Nav() {
           <a href="/">Home</a>
           <a href="/search">Search</a>
           <a href="/articles">Articles</a>
-          <a href="/communityboard">Community Board</a>
           <a href="/login">Log In</a>
         </div>
 
