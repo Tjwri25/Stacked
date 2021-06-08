@@ -31,6 +31,9 @@ function App() {
           <Route exact path="/signup">
             <SignUp />
           </Route>
+          <Route exact path="/articles">
+            <Articles />
+          </Route>
         </Switch>
       </div>
     </Router>

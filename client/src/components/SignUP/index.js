@@ -45,7 +45,7 @@ function SignupForm() {
         <Col xs="12" lg="6">
           <Card id="signupCard">
             <p id="loginTitle">
-              Please sign up to post to the &#123;Stacked&#125; Community Board
+              Please sign up to post to the &#123;Stacked&#125; Articles Page
             </p>
             <Row>
               <Col></Col>

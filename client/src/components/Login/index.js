@@ -7,7 +7,15 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 
+
 function LoginForm() {
+
+
+
+
+
+
+  
     return (
         <Container fluid>
         <Row>
@@ -15,7 +23,7 @@ function LoginForm() {
           <Col xs="12" lg="6">
             <Card id="loginCard">
               <p id="loginTitle">
-                Please log in to post to the &#123;Stacked&#125; Community Board
+                Please log in to post to the &#123;Stacked&#125; Articles Page
               </p>
               <Row>
                 <Col></Col>
