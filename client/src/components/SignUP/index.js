@@ -15,10 +15,10 @@ function SignupForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name)
-    console.log(email)
-    console.log(password)
-    fetch("/", {
+    console.log(name);
+    console.log(email);
+    console.log(password);
+    fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({
         name: name,
@@ -92,7 +92,12 @@ function SignupForm() {
                     />
                   </Form.Group>
 
-                  <Button id="signupSubmit" variant="primary" type="submit" onClick={handleSubmit}>
+                  <Button
+                    id="signupSubmit"
+                    variant="primary"
+                    type="submit"
+                    onClick={handleSubmit}
+                  >
                     Submit
                   </Button>
                   <p>

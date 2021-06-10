@@ -16,26 +16,25 @@ function LoginForm() {
     e.preventDefault();
     if (email && password) {
       // Send a POST request to the API endpoint
-      fetch("/", {
+      fetch("/api/users/login", {
         method: "POST",
         body: JSON.stringify({
           email: email,
           password: password,
         }),
         headers: { "Content-Type": "application/json" },
-      });
-      function validateUser() {
-        return true;
-      }
-
-      if (!validateUser) {
-        alert("Wrong email or password!");
-      } else if (validateUser) {
-        alert("logged in!");
-        let url = "/articles";
-        history.push(url);
-        // If successful, redirect the browser to the profile page
-      }
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (!data) {
+            alert("Wrong email or password!");
+          } else {
+            alert("logged in!");
+            let url = "/articles";
+            history.push(url);
+            // If successful, redirect the browser to the profile page
+          }
+        });
     }
   };
   return (
