@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Nav from "./components/Nav"
-import Home from "./pages/Home"
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Articles from "./pages/Articles";
-
 import Login from "./pages/Login";
-import SignUp from "./pages/SignUp"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import SignUp from "./pages/SignUp";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-         <Router>
+    <Router>
       <div>
         <Nav />
         <Switch>
