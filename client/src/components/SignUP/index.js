@@ -5,8 +5,10 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { useHistory } from "react-router-dom";
 
 function SignupForm() {
+  let history = useHistory();
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -28,10 +30,8 @@ function SignupForm() {
       },
     })
       .then((response) => {
-        response.json();
-      })
-      .then((response) => {
-        console.log(response);
+        let url = "/login";
+        history.push(url);
       })
       .catch((err) => {
         console.error(err);

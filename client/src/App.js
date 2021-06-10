@@ -5,6 +5,8 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Articles from "./pages/Articles";
+import Dan from "./pages/Dan";
+
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,6 +34,9 @@ function App() {
           </Route>
           <Route exact path="/articles">
             <Articles />
+          </Route>
+          <Route exact path="/dan">
+            <Dan />
           </Route>
         </Switch>
       </div>

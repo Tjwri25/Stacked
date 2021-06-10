@@ -12,6 +12,7 @@ h1 {
     font-size: 100px;
     color: whitesmoke;
     font-weight:700;
+    /* font-family: 'Fjalla One', sans-serif; */
 }
 
 #homebody2 {
@@ -19,11 +20,14 @@ h1 {
     color: black;
     font-weight:700;
     margin-bottom: 40px;
+    /* font-family: 'Fjalla One', sans-serif; */
 }
 
 #searchbody{
     font-size: 25px;
     color: whitesmoke;
+    background-color: transparent;
+    border: none;
 }
 
 #searchbar {
@@ -31,14 +35,24 @@ h1 {
 }
 
 #searchbutton{
-   justify-content: center;
+ 
    background-color: teal;
    color: black;
-   
+
    width: 80px;
 
 }
 
+#searchCard {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dataCard {
+    margin-top: 40px;
+}
 #loginCard {
     border-radius: 10px;
     text-align: center;
@@ -101,4 +115,67 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: teal;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#devSpotCard {
+ background-color: transparent;
+ border: none;
+ margin-bottom: 30px;
+}
+
+
+
+#devSpotContent {
+    text-align: center !important;
+    padding: 20px;
+    color: teal;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#img-dev {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+   
+}
+
+#link-dev {
+    text-align: center;
+    color:teal
+}
+
+#jobSearchCard {
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+#intPrepCard {
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+#resourcesCard {
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+body {
+    background: black;
+    
+}
+
 }

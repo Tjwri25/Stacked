@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 function SearchPage() {
   const [dataState, setDataState] = useState({
@@ -32,43 +33,51 @@ function SearchPage() {
   return (
     <div>
       <Container fluid>
+     
         <Row>
-          <Col></Col>
-          <Col xs lg="8">
-            <div id="searchbody">
-              Search for a topic, and view the activity it was first introduced,
+       
+          <Col xs="12" lg="3"> 
+          <Card id="searchCard" className="text-center">
+            <Card.Body>
+           <p>Search for a topic, and view the activity it was first introduced,
               other acitvities it was used in, and the appropriate
-              documentation.{""}
-            </div>
-          </Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col xs lg="6">
+              documentation.</p>
             <Form id="searchbar" inline>
               <Form.Control
                 type="text"
-                placeholder="Search"
+                placeholder="ex. array"
                 className="mr-sm-2"
                 onChange={handleInputChange}
-              />
+              /> 
             </Form>
             <Button
               id="searchbutton"
               variant="outline-success"
               onClick={getData}
+              className="justify-content-center"
             >
               Search
             </Button>
+      
+            </Card.Body>
+            </Card>
           </Col>
-          <Col>{dataState.data?._id && <ul>
-           <li> Title: {dataState.data.title}</li>
+  
+        <Col xs="12" lg="9">
+         <Card id="dataCard">
+        
+        {dataState.data?._id && <ul>
+        <h1>{dataState.data.title}</h1>
             <li>Docs: {dataState.data.docs}</li>
             <li>Introced: {dataState.data.introduced}</li>
             <li>Used: {dataState.data.used}</li>
           
-          </ul>}</Col>
+          </ul>}
+        
+       
+          </Card>
+          </Col>
+          <Col></Col>
         </Row>
       </Container>
     </div>
