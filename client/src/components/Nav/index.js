@@ -1,42 +1,53 @@
 import React from "react";
-import OpenNav from "./openNav";
-import CloseNav from "./closeNav";
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from "react-bootstrap/Nav"
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 import "./style.css";
 
-function Nav() {
+function Navlinks() {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <a className="navbar-brand" href="/">
-          <img
-            src="https://user-images.githubusercontent.com/74884495/119537012-de4ed200-bd46-11eb-8fcc-0a6f8252440f.png"
+
+
+<Row>
+     <Col>
+  <Navbar>
+  <Navbar.Brand href="/">
+  <img
+            src="https://user-images.githubusercontent.com/74884495/121584961-08b7b500-ca00-11eb-8e19-bb4e61e8ce22.png"
             alt=""
             width="300"
             height="100"
             className="d-inline-block align-text-top"
           ></img>
-        </a>
-      </nav>
+  </Navbar.Brand>
+  </Navbar>
+  </Col>
+<Col></Col>
+<Col>
+<Nav className="justify-content-end">
+    <Nav.Item>
+      <Nav.Link id="navlink" href="/">Home</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link id="navlink" href="/search">Search</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link id="navlink" href="/articles">Articles</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link id="navlink" href="/login">Log In</Nav.Link>
+    </Nav.Item>
+  </Nav>
+</Col>
+</Row>
 
-      <div>
-        <div id="mySidenav" className="sidenav">
-          <a href="javascript:void(0)" className="closebtn" onClick={CloseNav}>
-            &times;
-          </a>
-          <a href="/">Home</a>
-          <a href="/search">Search</a>
-          <a href="/articles">Articles</a>
-          <a href="/login">Log In</a>
-        </div>
 
-        <span className="openbtn" onClick={OpenNav}>
-          <div className="hmbgrMenu"></div>
-          <div className="hmbgrMenu"></div>
-          <div className="hmbgrMenu"></div>
-        </span>
-      </div>
-    </div>
+
+
+
   );
 }
 
-export default Nav;
+export default Navlinks;

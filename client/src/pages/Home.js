@@ -7,10 +7,13 @@ function Home() {
   return (
     <Container fluid>
       <Row>
-          <Col></Col>
+        <Col lg="1"></Col>
         <Col xs lg="8">
-          <div id="homebody">You <br></br>
-          Stuck?</div>
+        <img
+                  src="https://user-images.githubusercontent.com/74884495/121583140-e0c75200-c9fd-11eb-9e68-b9330c3ff261.png"
+                  id="homeImage"
+                  // className="d-block mx-auto img-fluid"
+                ></img>
         </Col>
         <Col></Col>
       </Row>
@@ -18,7 +21,7 @@ function Home() {
      <Col></Col>
      <Col></Col>
      <Col xs lg="6">
-         <div id="homebody2">You're in the right place.</div>
+         {/* <div id="homebody2">You're in the right place.</div> */}
      </Col>
         
       </Row>

@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
+
 function SearchPage() {
   const [dataState, setDataState] = useState({
     data: {},
@@ -67,10 +68,13 @@ function SearchPage() {
          <Card id="dataCard">
         
         {dataState.data?._id && <ul>
-        <h1>{dataState.data.title}</h1>
-            <li>Docs: {dataState.data.docs}</li>
-            <li>Introced: {dataState.data.introduced}</li>
-            <li>Used: {dataState.data.used}</li>
+        <h1 id="titleRender">{dataState.data.title}</h1>
+           <h2>Docs:</h2>
+            <p id="searchRender"><a href={dataState.data.docs}>{dataState.data.docs}</a> </p>
+            <h2>Introduced:</h2>
+            <p id="searchRender">{dataState.data.introduced}</p>
+            <h2>Used:</h2>
+            <p id="searchRender">{dataState.data.used}</p>
           
           </ul>}
         

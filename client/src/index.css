@@ -1,12 +1,14 @@
 body {
-    background-image: url("https://user-images.githubusercontent.com/74884495/119538746-a6e12500-bd48-11eb-8821-abf5d623ca74.png");
+    background-color: black;
+    background-image: url("https://user-images.githubusercontent.com/74884495/121580282-90022a00-c9fa-11eb-8ff8-951f859b74c1.png");
     background-repeat: no-repeat;
     background-size: cover;
+  
 }
-/* 
+
 h1 {
     text-align: center;
-} */
+}
 
 #homebody{
     font-size: 100px;
@@ -17,7 +19,7 @@ h1 {
 
 #homebody2 {
     font-size: 100px;
-    color: black;
+    color: whitesmoke;
     font-weight:700;
     margin-bottom: 40px;
     /* font-family: 'Fjalla One', sans-serif; */
@@ -48,6 +50,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#searchRender {
+    text-align: center;
+}
+
+#titleRender {
+    font-size: 70px !important;
 }
 
 #dataCard {
@@ -172,10 +182,12 @@ h2 {
     text-align: center;
 }
 
-@media (max-width:1200px) {
-body {
-    background: black;
-    
-}
-
+@media only screen and (max-width: 500px) {
+    body{
+        background-image: url("https://user-images.githubusercontent.com/74884495/121584422-70213500-c9ff-11eb-89ec-37c8532caa11.png");
+        background-repeat: repeat;
+    }
+    #homeImage {
+        margin-top: 100px
+    }
 }

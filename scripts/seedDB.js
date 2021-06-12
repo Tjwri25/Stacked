@@ -10,9 +10,9 @@ const actData = [
     introduced: ["Week 2, Activity 1, Line 3"],
 
     used: [
-      "Week: 2, Activity: 7, Line: 6, 9, 10",
-      "Week: 7, Activity: 2, Folder: assets/css/style.css, Line: 3",
-      "Week: 8, Activity: 6, Folder: assets/css/style.css Line: 2",
+      "Week: 2, Activity: 7, Line: 6, 9, 10  |" ,
+      "Week: 7, Activity: 2, Folder: assets/css/style.css, Line: 3  |",
+      "Week: 8, Activity: 6, Folder: assets/css/style.css Line: 2  |",
     ],
   },
   {
