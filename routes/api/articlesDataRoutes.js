@@ -13,4 +13,21 @@ router.get("/:type", (req, res) => {
       res.json(err);
     });
 });
+
+
+router.post("/addarticles", (req, res) => {
+  articles
+    .create(req.body)({
+      title: req.body.title,
+      url: req.body.url,
+      type: req.body.type,
+    })
+    .then((res) => {
+      res.json(res);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
 module.exports = router;

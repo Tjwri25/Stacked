@@ -1,7 +1,7 @@
 import React from "react";
 import DevSpotlight from "../components/DevSpotlight";
 import ArticleCard from "../components/ArticleCard";
-import ArticleForm from "../components/ArticleForm";
+import ArticleFormLink from "../components/ArticleFormLink";
 
 function Articles() {
 
@@ -10,7 +10,7 @@ function Articles() {
     <>
       <DevSpotlight />
       <ArticleCard />
-      <ArticleForm />
+      <ArticleFormLink />
     </>
   );
 }

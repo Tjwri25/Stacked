@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Search from "./pages/Search";
 import Articles from "./pages/Articles";
 import Dan from "./pages/Dan";
+import ArticleForm from "./pages/ArticleForm";
 
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -23,9 +24,6 @@ function App() {
           <Route exact path="/search">
             <Search />
           </Route>
-          <Route exact path="/articles">
-            <Articles />
-          </Route>
           <Route exact path="/login">
             <Login />
           </Route>
@@ -37,6 +35,9 @@ function App() {
           </Route>
           <Route exact path="/dan">
             <Dan />
+          </Route>
+          <Route exact path="/articleForm">
+            <ArticleForm />
           </Route>
         </Switch>
       </div>
