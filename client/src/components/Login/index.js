@@ -16,31 +16,27 @@ function LoginForm() {
     e.preventDefault();
     if (email && password) {
       // Send a POST request to the API endpoint
-     fetch('/', {
-        method: 'POST',
+      fetch("/api/users/login", {
+        method: "POST",
         body: JSON.stringify({
-          
           email: email,
-          password: password
+          password: password,
         }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-      function validateUser() {
-            return true;
+        headers: { "Content-Type": "application/json" },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (!data) {
+            alert("Wrong email or password!");
+          } else {
+            alert("logged in!");
+            let url = "/articles";
+            history.push(url);
+            // If successful, redirect the browser to the profile page
           }
-
-          if (!validateUser) {
-            alert("Wrong email or password!")
-          }
-      else if (validateUser) {
-        alert('logged in!')
-        let url = "/articles";
-        history.push(url);
-        // If successful, redirect the browser to the profile page
-
-      }
+        });
     }
-  }
+  };
   return (
     <Container fluid>
       <Row>
@@ -81,7 +77,12 @@ function LoginForm() {
                     />
                   </Form.Group>
 
-                  <Button id="loginSubmit" variant="primary" type="submit" onClick={handleSubmit}>
+                  <Button
+                    id="loginSubmit"
+                    variant="primary"
+                    type="submit"
+                    onClick={handleSubmit}
+                  >
                     Submit
                   </Button>
                   <p>

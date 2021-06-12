@@ -1,31 +1,29 @@
-const router = require('express').Router();
-const db = require("../models");
-const usersController = require("../controllers/usersController");
+// const router = require('express').Router();
+// const db = require("../models");
+// const usersController = require("../controllers/usersController");
 
+// router.route("/")
+//   .get(usersController.findAll)
+//   .post(usersController.create);
 
+// // router.get('/', async (req, res) => {
+// //     res.render("Home");
+// //   });
 
-router.route("/")
-  .get(usersController.findAll)
-  .post(usersController.create);
+// //   router.get('/search', (req, res) => {
+// //     res.render("Search");
+// //   });
 
-// router.get('/', async (req, res) => {
-//     res.render("Home");
-//   });
+// //   router.get('/communityboard', (req, res) => {
+// //     res.render("CommunityBoard");
+// //   });
 
-//   router.get('/search', (req, res) => {
-//     res.render("Search");
-//   });
+// //   router.get('/login', (req, res) => {
+// //     res.render("Login");
+// //   });
 
-//   router.get('/communityboard', (req, res) => {
-//     res.render("CommunityBoard");
-//   });
+// //   router.get('/articles', (req, res) => {
+// //     res.render("Articles");
+// //   });
 
-//   router.get('/login', (req, res) => {
-//     res.render("Login");
-//   });
-
-//   router.get('/articles', (req, res) => {
-//     res.render("Articles");
-//   });
-
-module.exports = router;
+// module.exports = router;
