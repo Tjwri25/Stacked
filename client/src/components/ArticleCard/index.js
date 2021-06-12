@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
+
 
 function ArticleCard() {
 
@@ -67,7 +67,7 @@ function ArticleCard() {
               <h2>Job Searching</h2>
               <ol>
        
-              {intArticles.map( (jobArticles) =>  {
+              {jobArticles.map( (jobArticles) =>  {
                 return (
                 <li id="jobRender"><a href={jobArticles.url}>{jobArticles.title}</a></li>
                 )
@@ -84,7 +84,7 @@ function ArticleCard() {
 
               <ol>
         
-              {jobArticles.map( (intArticles) =>  {
+              {intArticles.map( (intArticles) =>  {
                 return (
                 <li id="interviewRender"><a href={intArticles.url}>{intArticles.title}</a></li>
                 )
