@@ -1,11 +1,11 @@
 const path = require("path");
 const router = require("express").Router();
 const { articles } = require("../../models");
-router.get("/articles", (req, res) => {
+router.get("/:type", (req, res) => {
   articles
-    .findOne({
-      title: req.params.keyword,
-    })
+  .find({
+    type: req.params.type,
+  })
     .then((results) => {
       res.json(results);
     })

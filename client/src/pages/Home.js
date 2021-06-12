@@ -12,6 +12,7 @@ function Home() {
         <img
                   src="https://user-images.githubusercontent.com/74884495/121583140-e0c75200-c9fd-11eb-9e68-b9330c3ff261.png"
                   id="homeImage"
+                  alt="rightplace"
                   // className="d-block mx-auto img-fluid"
                 ></img>
         </Col>
