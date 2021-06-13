@@ -46,7 +46,6 @@ function SearchPage() {
           <Col xs="12" lg="6">
             <Card id="searchCard" className="text-center">
               <Card.Body>
-                <div className="bg-image"></div>
                 <p id="searchHeader">Let's find what you're looking for</p>
                 <p>
                   Search for a topic, and view the activity it was first

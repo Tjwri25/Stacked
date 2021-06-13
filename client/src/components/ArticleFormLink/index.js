@@ -1,15 +1,17 @@
 import React from "react";
-import "../../index.css";
+import "./index.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 
 function ArticleFormLink() {
+ 
+  
   return (
-    <h1>
+    <h1 id="artFormLink">
       Found something useful? Add a resource
-      <a href="/articleForm"> here</a>
+      <a href="/login"> here</a>
     </h1>
   );
 }

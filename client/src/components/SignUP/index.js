@@ -18,6 +18,7 @@ function SignupForm() {
     console.log(name);
     console.log(email);
     console.log(password);
+    let user = {name, email, password};
     fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({

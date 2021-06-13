@@ -1,0 +1,8 @@
+.articleFormPage {
+   background-color: rgb(31, 30, 30);
+   box-shadow: 10px 10px 5px rgb(14, 13, 13);
+}
+
+#addArticleCard {
+    box-shadow: 10px 10px 5px rgb(14, 13, 13);
+}

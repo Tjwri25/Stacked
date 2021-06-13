@@ -1,0 +1,92 @@
+.abg-image {
+    background-image: url("../Images/background1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: 10px 10px 5px rgb(24, 24, 24);
+    z-index: -1;
+}
+
+
+#jobSearchCard {
+ 
+  color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  margin-left: -30px;
+  margin-top: 50px;
+  background-color: rgb(42, 42, 42);
+  border-radius: 0px;
+}
+
+#intPrepCard {
+    color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 0px;
+}
+
+#resourcesCard {
+    color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 0px;
+}
+
+h2 {
+  text-align: center;
+}
+.articlesPage {
+  background-color: rgb(31, 30, 30);
+}
+#devSpotContent {
+  text-align: center !important;
+  padding: 20px;
+  color: teal;
+}
+
+#link-dev {
+  text-align: center;
+  color: teal;
+}
+
+#dan-card {
+  background-image: url("../Images/Danimage2.jpg");
+  width: 300px !important;
+  height: 300px !important;
+  box-shadow: 10px 10px 5px rgb(14, 13, 13);
+  margin-top: 50px;
+  margin-left: 30px;
+  opacity: 0.9;
+}
+
+#allana-card {
+  background-image: url("../Images/allanaimage2.jpg");
+  width: 300px !important;
+  height: 300px !important;
+  box-shadow: 10px 10px 5px rgb(14, 13, 13);
+  margin-top: 20px;
+  margin-left: 30px;
+  opacity: 0.95;
+}
+
+#allana-card:hover {
+  opacity: 0.5;
+}
+#dan-card:hover {
+  opacity: 0.5;
+}
+
+#qa {
+  margin-top: 200px;
+  color: whitesmoke;
+  text-shadow: 2px 2px #000000;
+}
+
+#articleHeader {
+  color: whitesmoke;
+  font-size: 50px !important;
+  margin-top: 110px;
+  text-shadow: 2px 2px #000000;
+  /* margin-bottom: 100px !important; */
+}

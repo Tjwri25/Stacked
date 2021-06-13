@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../../index.css";
+import "./index.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
+import NavLinks from "../Nav"
 
 
 function ArticleCard() {
@@ -59,12 +60,33 @@ function ArticleCard() {
 
 
   return (
-    <Container fluid>
+        <Container fluid>
+          <div className="abg-image">
+            <NavLinks />
+          <h1 id="articleHeader">All your resources in one place</h1>
+
+          </div>
       <Row>
-        <Col xs="12" lg="4">
+      
+        <Col xs="12" lg="3">
+          <Card id="dan-card">
+            <Card.Body>
+              <h1 id="qa">Q&A with Dan Kaltenbaugh</h1>
+
+              <a href="/dan" class="stretched-link"></a>
+            </Card.Body>
+          </Card>
+          <Card id="allana-card">
+            <Card.Body>
+              <h1 id="qa">Q&A with Allana Anderson</h1>
+              <a href="/dan" class="stretched-link"></a>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs="12" lg="3">
           <Card id="jobSearchCard">
             <Card.Body>
-              <h2>Job Searching</h2>
+              <h2>Find your dream job</h2>
               <ol>
        
               {jobArticles.map( (jobArticles) =>  {
@@ -77,7 +99,7 @@ function ArticleCard() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs="12" lg="4">
+        <Col xs="12" lg="3">
           <Card id="intPrepCard">
             <Card.Body>
               <h2>Interview Prep</h2>
@@ -93,8 +115,10 @@ function ArticleCard() {
                 </ol>
             </Card.Body>
           </Card>
+          
+        
         </Col>
-        <Col xs="12" lg="4">
+        <Col xs="12" lg="3">
           <Card id="resourcesCard">
             <Card.Body>
               <h2>Resources</h2>
@@ -110,6 +134,7 @@ function ArticleCard() {
           </Card>
         </Col>
       </Row>
+
     </Container>
   );
 }
