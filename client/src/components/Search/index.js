@@ -6,10 +6,9 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import NavLinks from "../Nav"
+import NavLinks from "../Nav";
 
-import InputGroup from 'react-bootstrap/InputGroup'
-
+import InputGroup from "react-bootstrap/InputGroup";
 
 function SearchPage() {
   const [dataState, setDataState] = useState({
@@ -36,45 +35,43 @@ function SearchPage() {
   };
   return (
     <>
- 
-
       <Container fluid>
-      <div className="bg-image">
-        <NavLinks />
-        <Row>
-          <Col></Col>
-          <Col xs="12" lg="6">
-            <Card id="searchCard" className="text-center">
-              <Card.Body>
-                <div className="bg-image"></div>
-                <p id="searchHeader">Let's find what you're looking for</p>
-                <p>
-                  Search for a topic, and view the activity it was first
-                  introduced, other activities it was used in, and the
-                  appropriate documentation.
-                </p>
-                <InputGroup className="mb-3">
-                  <Form.Control
-                    type="text"
-                    placeholder="ex. array"
-                    className="mr-sm-2"
-                    onChange={handleInputChange}
-                  />
-                  <InputGroup.Append>
-                    <Button
-                      id="searchbutton"
-                      onClick={getData}
-                      className="justify-content-center"
-                    >
-                      Search
-                    </Button>
-                  </InputGroup.Append>
-                </InputGroup>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col></Col>
-        </Row>
+        <div className="bg-image">
+          <NavLinks />
+          <Row>
+            <Col></Col>
+            <Col xs="12" lg="6">
+              <Card id="searchCard" className="text-center">
+                <Card.Body>
+                  <div className="bg-image"></div>
+                  <p id="searchHeader">Let's find what you're looking for</p>
+                  <p>
+                    Search for a topic, and view the activity it was first
+                    introduced, other activities it was used in, and the
+                    appropriate documentation.
+                  </p>
+                  <InputGroup className="mb-3">
+                    <Form.Control
+                      type="text"
+                      placeholder="ex. array"
+                      className="mr-sm-2"
+                      onChange={handleInputChange}
+                    />
+                    <InputGroup.Append>
+                      <Button
+                        id="searchbutton"
+                        onClick={getData}
+                        className="justify-content-center"
+                      >
+                        Search
+                      </Button>
+                    </InputGroup.Append>
+                  </InputGroup>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col></Col>
+          </Row>
         </div>
         <Row>
           <Col></Col>
