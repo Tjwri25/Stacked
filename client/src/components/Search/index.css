@@ -1,0 +1,59 @@
+.bg-image{
+    background-image: url("../Images/peopleComputer.jpg");
+    background-color: rgb(47, 47, 47);
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: 10px 10px 5px rgb(24, 24, 24);
+    z-index: -1;
+   
+}
+.searchPage {
+    background-color: rgb(47, 47, 47);
+}
+
+#searchbar {
+    padding: 30px !important;
+}
+
+#searchbutton{
+ 
+   background-color:#1BC0D1;
+   color: black;
+
+   width: 80px;
+
+}
+
+#searchCard {
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border: none;
+}
+
+#searchRender {
+    text-align: center;
+}
+
+#titleRender {
+    font-size: 70px !important;
+}
+
+#dataCard {
+   
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    /* box-shadow: 10px 10px 5px rgb(24, 24, 24); */
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#searchHeader {
+    font-size: 50px;
+}
