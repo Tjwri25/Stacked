@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "../../index.css";
+import "./index.css"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+
+
 
 
 function SearchPage() {
@@ -32,8 +34,12 @@ function SearchPage() {
       });
   };
   return (
-    <div>
-      <Container fluid>
+   
+  
+  <div className="searchPage">
+    
+
+      <Container  fluid>
      
         <Row>
        
@@ -73,6 +79,7 @@ function SearchPage() {
             <p id="searchRender"><a href={dataState.data.docs}>{dataState.data.docs}</a> </p>
             <h2>Introduced:</h2>
             <p id="searchRender">{dataState.data.introduced}</p>
+            
             <h2>Used:</h2>
             <p id="searchRender">{dataState.data.used}</p>
           
@@ -84,7 +91,7 @@ function SearchPage() {
           <Col></Col>
         </Row>
       </Container>
-    </div>
+      </div>
   );
 }
 export default SearchPage;

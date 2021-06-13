@@ -1,0 +1,36 @@
+.searchPage{
+    background-color: black;
+}
+
+
+#searchbar {
+    padding: 30px !important;
+}
+
+#searchbutton{
+ 
+   background-color: teal;
+   color: black;
+
+   width: 80px;
+
+}
+
+#searchCard {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchRender {
+    text-align: center;
+}
+
+#titleRender {
+    font-size: 70px !important;
+}
+
+#dataCard {
+    margin-top: 40px;
+}

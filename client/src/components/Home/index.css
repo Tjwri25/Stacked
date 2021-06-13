@@ -1,0 +1,40 @@
+.homePage {
+    background-color: black;
+    background-image: url("https://user-images.githubusercontent.com/74884495/121580282-90022a00-c9fa-11eb-8ff8-951f859b74c1.png");
+    background-repeat: no-repeat;
+
+top: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+  
+}
+
+h1 {
+    text-align: center;
+}
+
+#homebody{
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight:700;
+    /* font-family: 'Fjalla One', sans-serif; */
+}
+
+#homebody2 {
+    font-size: 100px;
+    color: whitesmoke;
+    font-weight:700;
+    margin-bottom: 40px;
+    /* font-family: 'Fjalla One', sans-serif; */
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-image: url("https://user-images.githubusercontent.com/74884495/121584422-70213500-c9ff-11eb-89ec-37c8532caa11.png");
+        background-repeat: repeat;
+    }
+    #homeImage {
+        margin-top: 100px
+    }
+}

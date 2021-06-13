@@ -1,36 +1,8 @@
-body {
-    background-color: black;
-    background-image: url("https://user-images.githubusercontent.com/74884495/121580282-90022a00-c9fa-11eb-8ff8-951f859b74c1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-}
 
 h1 {
     text-align: center;
 }
 
-#homebody{
-    font-size: 100px;
-    color: whitesmoke;
-    font-weight:700;
-    /* font-family: 'Fjalla One', sans-serif; */
-}
-
-#homebody2 {
-    font-size: 100px;
-    color: whitesmoke;
-    font-weight:700;
-    margin-bottom: 40px;
-    /* font-family: 'Fjalla One', sans-serif; */
-}
-
-#searchbody{
-    font-size: 25px;
-    color: whitesmoke;
-    background-color: transparent;
-    border: none;
-}
 
 #searchbar {
     padding: 30px !important;
@@ -219,3 +191,11 @@ h2 {
 #addArtSubmit {
     background-color: teal;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
