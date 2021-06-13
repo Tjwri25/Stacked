@@ -4,37 +4,7 @@ h1 {
 }
 
 
-#searchbar {
-    padding: 30px !important;
-}
 
-#searchbutton{
- 
-   background-color: teal;
-   color: black;
-
-   width: 80px;
-
-}
-
-#searchCard {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#searchRender {
-    text-align: center;
-}
-
-#titleRender {
-    font-size: 70px !important;
-}
-
-#dataCard {
-    margin-top: 40px;
-}
 #loginCard {
     border-radius: 10px;
     text-align: center;
@@ -198,4 +168,8 @@ h2 {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+  }
+
+  .footer {
+      height: 300px;
   }

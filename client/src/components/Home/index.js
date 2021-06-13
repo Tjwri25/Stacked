@@ -7,8 +7,8 @@ import "./index.css"
 
 function HomePage() {
   return (
-    <div className="homePage">
-  
+ 
+    <Container fluid >
       <Row>
         <Col lg="1"></Col>
         <Col xs lg="8">
@@ -29,8 +29,8 @@ function HomePage() {
      </Col>
         
       </Row>
-   
-    </div>
+    </Container>
+ 
   );
 }
 

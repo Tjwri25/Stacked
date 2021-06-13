@@ -13,20 +13,9 @@ background-size: cover;
 h1 {
     text-align: center;
 }
-
-#homebody{
-    font-size: 100px;
-    color: whitesmoke;
-    font-weight:700;
-    /* font-family: 'Fjalla One', sans-serif; */
-}
-
-#homebody2 {
-    font-size: 100px;
-    color: whitesmoke;
-    font-weight:700;
-    margin-bottom: 40px;
-    /* font-family: 'Fjalla One', sans-serif; */
+ 
+#homeImage {
+    margin-bottom: 200px;
 }
 
 @media only screen and (max-width: 500px) {

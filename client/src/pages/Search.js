@@ -1,14 +1,21 @@
 import React from "react";
 import SearchPage from '../components/Search'
-import BackgroundVid from "../components/Background"
+
 import "../components/Search/index.css"
+import Footer from "../components/Footer"
+
+
+
 
 function Search() {
   return (
-    <>
-   <BackgroundVid />
+    
+   <div className="searchPage">
+
+
    <SearchPage />
-   </>
+   <Footer />
+   </div>
   );
 }
 

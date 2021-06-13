@@ -1,12 +1,14 @@
 import React from "react";
-import HomePage from "../components/Home"
-
+import HomePage from "../components/Home";
+import "../components/Home/index.css";
+import NavLinks from "../components/Nav";
 
 function Home() {
   return (
-   
-<HomePage />
-
+    <div className="homePage">
+      <NavLinks />
+      <HomePage />
+    </div>
   );
 }
 
