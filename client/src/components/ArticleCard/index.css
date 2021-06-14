@@ -1,5 +1,5 @@
 .abg-image {
-    background-image: url("../Images/background1.jpg");
+    background-image: url("../Images/peopleComputer.jpg");
     background-repeat: no-repeat;
     width: 100%;
     box-shadow: 10px 10px 5px rgb(24, 24, 24);
@@ -12,7 +12,7 @@
   color: whitesmoke;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   margin-left: -30px;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: rgb(42, 42, 42);
   border-radius: 0px;
 }
@@ -20,7 +20,7 @@
 #intPrepCard {
     color: whitesmoke;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: rgb(42, 42, 42);
     border-radius: 0px;
 }
@@ -28,7 +28,7 @@
 #resourcesCard {
     color: whitesmoke;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: rgb(42, 42, 42);
     border-radius: 0px;
 }
@@ -55,8 +55,9 @@ h2 {
   width: 300px !important;
   height: 300px !important;
   box-shadow: 10px 10px 5px rgb(14, 13, 13);
-  margin-top: 50px;
-  margin-left: 30px;
+  margin-top: 60px;
+margin-left: 60px;
+  border-radius: 0px;
   opacity: 0.9;
 }
 
@@ -65,8 +66,9 @@ h2 {
   width: 300px !important;
   height: 300px !important;
   box-shadow: 10px 10px 5px rgb(14, 13, 13);
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 60px;
+
+  border-radius: 0px;
   opacity: 0.95;
 }
 
@@ -83,10 +85,25 @@ h2 {
   text-shadow: 2px 2px #000000;
 }
 
-#articleHeader {
+#articleHeaderCard {
+  background-color: transparent;
   color: whitesmoke;
-  font-size: 50px !important;
+  font-size: 20px;
   margin-top: 110px;
-  text-shadow: 2px 2px #000000;
-  /* margin-bottom: 100px !important; */
+  margin-bottom: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+}
+
+#articleHeader {
+  font-size: 50px !important;
+}
+
+#artFormLink {
+  color: whitesmoke;
+  font-size: 50px;
+  margin-top: 30px;
 }
