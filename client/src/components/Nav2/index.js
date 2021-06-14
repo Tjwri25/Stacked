@@ -37,7 +37,7 @@ function Navlinks2() {
       <Nav.Link id="navlink" href="/articles">Articles</Nav.Link>
     </Nav.Item>
     <Nav.Item>
-      <Nav.Link id="navlink" href="/login">Log Out</Nav.Link>
+      <Nav.Link id="navlink" href="/">Log Out</Nav.Link>
     </Nav.Item>
   </Nav>
 </Col>
