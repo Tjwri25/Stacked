@@ -143,7 +143,7 @@ function ArticleCard() {
           <Card id="allana-card">
             <Card.Body>
               <h1 id="qa">Q&A with Allana Anderson</h1>
-              <a href="/dan" class="stretched-link"></a>
+              <a href="/allana" class="stretched-link"></a>
             </Card.Body>
           </Card>
           <Col lg="3"></Col>

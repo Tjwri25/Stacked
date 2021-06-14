@@ -104,6 +104,7 @@ function LoginForm() {
         </Col>
         <Col></Col>
       </Row>
+      
     </Container>
   );
 }

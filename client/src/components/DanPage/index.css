@@ -1,0 +1,30 @@
+.danPage {
+    background-image: url(../Images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img-dan {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 6px 6px 5px rgb(14, 13, 13);
+}
+
+#question {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+.danQACard {
+    text-align: center;
+    background-color: rgb(14, 13, 13, 0.6) !important;
+    color: whitesmoke;
+    border: none !important;
+}
+
+#danContent {
+ margin-top: 50px;
+
+}

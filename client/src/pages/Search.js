@@ -2,7 +2,7 @@ import React from "react";
 import SearchPage from '../components/Search'
 
 import "../components/Search/index.css"
-import Footer from "../components/Footer"
+import OtherFooter from "../components/OtherFooter"
 
 
 
@@ -14,7 +14,7 @@ function Search() {
 
 
    <SearchPage />
-   <Footer />
+   <OtherFooter />
    </div>
   );
 }

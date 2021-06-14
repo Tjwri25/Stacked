@@ -1,8 +1,27 @@
-.articleFormPage {
-   background-color: rgb(31, 30, 30);
-   box-shadow: 10px 10px 5px rgb(14, 13, 13);
+#addArticleCard {
+
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-#addArticleCard {
-    box-shadow: 10px 10px 5px rgb(14, 13, 13);
+#articleTitle {
+    text-align: center;
+    margin-bottom: 30px;
+   
+
+}
+
+#articleURL {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#articleCat {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#addArtSubmit {
+    background-color: teal;
 }

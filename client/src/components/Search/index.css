@@ -57,3 +57,11 @@
 #searchHeader {
     font-size: 50px;
 }
+
+@media only screen and (max-width: 500px) {
+    .bg-image{
+        background-image: none;
+ 
+    }
+   
+}

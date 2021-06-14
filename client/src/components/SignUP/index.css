@@ -1,0 +1,30 @@
+#signupCard {
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    #nameSignup {
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    
+    #emailSignup {
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    
+    #passwordSignup {
+        text-align: center;
+        margin-top: -20px;
+    }
+    
+    
+    #signupSubmit {
+        background-color: teal;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    

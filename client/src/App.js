@@ -7,7 +7,7 @@ import Search from "./pages/Search";
 import Articles from "./pages/Articles";
 import Dan from "./pages/Dan";
 import ArticleForm from "./pages/ArticleForm";
-
+import Allana from "./pages/Allana"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,6 +35,9 @@ function App() {
           </Route>
           <Route exact path="/dan">
             <Dan />
+          </Route>
+          <Route exact path="/allana">
+            <Allana />
           </Route>
           <Route exact path="/articleForm">
             <ArticleForm />

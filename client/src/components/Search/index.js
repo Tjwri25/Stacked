@@ -77,7 +77,9 @@ function SearchPage() {
         </div>
         <Row>
           <Col></Col>
+
           <Col xs="12" lg="8">
+    
             <Card id="dataCard">
               {dataState.data?._id && (
                 <ul>
@@ -85,7 +87,7 @@ function SearchPage() {
                   <h2>Introduced:</h2>
                   <p id="searchRender">{dataState.data.introduced}</p>
 
-                  <h2>Used:</h2>
+                  <h2>Other Examples:</h2>
                   <p id="searchRender">{dataState.data.used}</p>
                   <h2>Docs:</h2>
                   <p id="searchRender">

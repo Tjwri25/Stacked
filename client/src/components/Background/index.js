@@ -1,5 +1,6 @@
 import React from "react";
-import Video from "../Video/background.mp4";
+import Video from "../Video/video.mp4";
+import "./index.css"
 
 function BackgroundVid() {
   return (
@@ -27,29 +28,4 @@ function BackgroundVid() {
 
 export default BackgroundVid;
 
-{
-  /* <video width="750" height="500" controls >
-<source src={video} type="video/mp4"/>
-</video>
 
-<video
-autoPlay
-loop
-muted
-style={{
-  position: "absolute",
-  width: "100%",
-  left: "50%",
-  top: "50%",
-  height:"100%",
-  objectFit: "cover",
-  transform: "translate(-50%, -50%)",
-  zIndex: "-1"
-  
-
-}}
->
-  
-  <source source={Video} type="video/mp4"/>
-</video> */
-}

@@ -88,33 +88,7 @@ h2 {
     }
 }
 
-#addArticleCard {
 
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-#articleTitle {
-    text-align: center;
-    margin-bottom: 30px;
-   
-
-}
-
-#articleURL {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#articleCat {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#addArtSubmit {
-    background-color: teal;
-}
 
 #myVideo {
     position: fixed;
@@ -125,7 +99,8 @@ h2 {
   }
 
   .footer {
-      height: 300px;
+      height: 200px;
+      background-color: transparent;
   }
 
  
