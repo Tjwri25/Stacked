@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../../index.css";
+import "./index.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
+import NavLinks from "../Nav"
 
 
 function ArticleCard() {
@@ -59,12 +60,27 @@ function ArticleCard() {
 
 
   return (
-    <Container fluid>
+        <Container fluid>
+          <div className="abg-image">
+            <NavLinks />
+            <Card id="articleHeaderCard"  className="text-center">
+              <Card.Body>
+          <h1 id="articleHeader">All your resources in one place</h1>
+          <p>Articles for every stage of developing</p>
+          </Card.Body>
+          </Card>
+          </div>
       <Row>
+      <Col lg="12">
+            <h1 id="artFormLink">
+      Wanna add to greatness? add a resource
+      <a href="/login"> here</a>
+    </h1>
+    </Col>
         <Col xs="12" lg="4">
           <Card id="jobSearchCard">
             <Card.Body>
-              <h2>Job Searching</h2>
+              <h2>Find your dream job</h2>
               <ol>
        
               {jobArticles.map( (jobArticles) =>  {
@@ -80,7 +96,7 @@ function ArticleCard() {
         <Col xs="12" lg="4">
           <Card id="intPrepCard">
             <Card.Body>
-              <h2>Interview Prep</h2>
+              <h2>Nail your interview</h2>
 
               <ol>
         
@@ -93,11 +109,12 @@ function ArticleCard() {
                 </ol>
             </Card.Body>
           </Card>
+        
         </Col>
         <Col xs="12" lg="4">
           <Card id="resourcesCard">
             <Card.Body>
-              <h2>Resources</h2>
+              <h2>Need help? Look here</h2>
               <ol>
               {resources.map( (resource) =>  {
                 return (
@@ -108,8 +125,31 @@ function ArticleCard() {
                 </ol>
             </Card.Body>
           </Card>
+
         </Col>
       </Row>
+      <Row>
+        <Col lg="3"></Col>
+        <Col xs="12" lg="3">
+          <Card id="dan-card">
+            <Card.Body>
+              <h1 id="qa">Q&A with Dan Kaltenbaugh</h1>
+
+              <a href="/dan" class="stretched-link"></a>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col xs="12" lg="3">
+          <Card id="allana-card">
+            <Card.Body>
+              <h1 id="qa">Q&A with Allana Anderson</h1>
+              <a href="/dan" class="stretched-link"></a>
+            </Card.Body>
+          </Card>
+          <Col lg="3"></Col>
+        </Col>
+      </Row>
+
     </Container>
   );
 }

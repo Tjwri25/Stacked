@@ -14,6 +14,11 @@ function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // let user = {
+    //   email: email.value,
+    //   password: password.value
+    // }
+    // console.log(user)
     if (email && password) {
       // Send a POST request to the API endpoint
       fetch("/api/users/login", {
@@ -30,7 +35,7 @@ function LoginForm() {
             alert("Wrong email or password!");
           } else {
             alert("logged in!");
-            let url = "/articles";
+            let url = "/articleForm";
             history.push(url);
             // If successful, redirect the browser to the profile page
           }

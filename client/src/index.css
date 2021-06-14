@@ -69,56 +69,10 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom: 20px;
 }
 
-#devSpotCard {
- background-color: transparent;
- border: none;
- margin-bottom: 30px;
-}
 
 
 
-#devSpotContent {
-    text-align: center !important;
-    padding: 20px;
-    color: teal;
-    font-family: 'Fjalla One', sans-serif;
-}
 
-#img-dev {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 50%;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-   
-}
-
-#link-dev {
-    text-align: center;
-    color:teal
-}
-
-#jobSearchCard {
-    font-family: 'Fjalla One', sans-serif;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-}
-
-#intPrepCard {
-    font-family: 'Fjalla One', sans-serif;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-}
-
-#resourcesCard {
-    font-family: 'Fjalla One', sans-serif;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-}
 
 h2 {
     text-align: center;
@@ -173,3 +127,5 @@ h2 {
   .footer {
       height: 300px;
   }
+
+ 

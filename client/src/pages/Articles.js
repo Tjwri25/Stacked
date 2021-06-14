@@ -1,17 +1,20 @@
 import React from "react";
-import DevSpotlight from "../components/DevSpotlight";
+
+import Footer from "../components/Footer";
+
 import ArticleCard from "../components/ArticleCard";
-import ArticleFormLink from "../components/ArticleFormLink";
+
 
 function Articles() {
 
 
   return (
-    <>
-      <DevSpotlight />
+    <div className="articlesPage">
+
       <ArticleCard />
-      <ArticleFormLink />
-    </>
+
+    <Footer />
+      </div>
   );
 }
 

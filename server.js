@@ -1,5 +1,5 @@
 const express = require("express");
-
+const path = require("path");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -10,8 +10,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, "/client/build")));
+  // Handle React routing, return all requests to React app
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "/client/build/index.html"));
+  });
 }
+
 // Add routes, both API and view
 app.use(routes);
 
