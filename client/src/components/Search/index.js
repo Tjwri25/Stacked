@@ -23,12 +23,7 @@ function SearchPage() {
   };
   const getData = () => {
     console.log(dataState.inputValue);
-    fetch(`/api/activityData/${dataState.inputValue}`,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    })
+    fetch(`/api/activityData/${dataState.inputValue}`)
       .then((response) => response.json())
       .then((responseData) => {
         console.log(responseData);

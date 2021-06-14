@@ -22,13 +22,7 @@ function ArticleCard2() {
   }, []);
 
   const getResources = () => {
-    fetch(`/api/articles/resources`, {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       },
-    }
-    )
+    fetch(`/api/articles/resources`)
       .then((response) => response.json())
       .then((responseData) => {
         console.log("response data", responseData);
