@@ -27,7 +27,10 @@ function LoginForm() {
           email: email,
           password: password,
         }),
-        headers: { "Content-Type": "application/json" },
+       headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         },
       })
         .then((response) => response.json())
         .then((data) => {
@@ -35,7 +38,7 @@ function LoginForm() {
             alert("Wrong email or password!");
           } else {
             alert("logged in!");
-            let url = "/articleForm";
+            let url = "/addarticleForm";
             history.push(url);
             // If successful, redirect the browser to the profile page
           }

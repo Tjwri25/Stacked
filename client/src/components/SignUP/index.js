@@ -18,7 +18,7 @@ function SignupForm() {
     console.log(name);
     console.log(email);
     console.log(password);
-    let user = {name, email, password};
+
     fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({
@@ -26,9 +26,10 @@ function SignupForm() {
         email: email,
         password: password,
       }),
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       },
     })
       .then((response) => {
         let url = "/login";

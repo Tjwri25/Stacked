@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "./index.css";
+import "../ArticleCard/index.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import NavLinks from "../Nav"
+import NavLinks2 from "../Nav2"
 
 
-function ArticleCard() {
+function ArticleCard2() {
 
   const [resources, setResources] = useState([]);
   const [jobArticles, setJobArticles] = useState([]);
@@ -15,17 +15,23 @@ function ArticleCard() {
   const [intArticles, setIntArticles] = useState([]);
 
   useEffect(() => {
-
+    console.log("hello");
     getResources();
     getJobArticles();
     getIntArticles();
   }, []);
 
   const getResources = () => {
-    fetch(`/api/articles/resources`)
+    fetch(`/api/articles/resources`, {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       },
+    }
+    )
       .then((response) => response.json())
       .then((responseData) => {
-   
+        console.log("response data", responseData);
         setResources(responseData);
       });
   };
@@ -34,7 +40,7 @@ function ArticleCard() {
     fetch(`/api/articles/job-search`)
       .then((response) => response.json())
       .then((responseData) => {
-  
+        console.log("response data", responseData);
         setJobArticles(responseData);
       });
   };
@@ -43,7 +49,7 @@ function ArticleCard() {
     fetch(`/api/articles/interview-prep`)
       .then((response) => response.json())
       .then((responseData) => {
-     
+        console.log("response data", responseData);
         setIntArticles(responseData);
       });
   };
@@ -62,7 +68,7 @@ function ArticleCard() {
   return (
         <Container fluid>
           <div className="abg-image">
-            <NavLinks />
+         <NavLinks2 />
             <Card id="articleHeaderCard"  className="text-center">
               <Card.Body>
           <h1 id="articleHeader">All your resources in one place</h1>
@@ -74,7 +80,7 @@ function ArticleCard() {
       <Col lg="12">
             <h1 id="artFormLink">
       Wanna add to greatness? add a resource
-      <a href="/login"> here</a>
+      <a href="/addarticleForm"> here</a>
     </h1>
     </Col>
         <Col xs="12" lg="4">
@@ -135,7 +141,7 @@ function ArticleCard() {
             <Card.Body>
               <h1 id="qa">Q&A with Dan Kaltenbaugh</h1>
 
-              <a href="/dan" className="stretched-link">.</a>
+              <a href="/dan" class="stretched-link">.</a>
             </Card.Body>
           </Card>
           </Col>
@@ -143,7 +149,7 @@ function ArticleCard() {
           <Card id="allana-card">
             <Card.Body>
               <h1 id="qa">Q&A with Allana Anderson</h1>
-              <a href="/allana" className="stretched-link">.</a>
+              <a href="/allana" class="stretched-link">.</a>
             </Card.Body>
           </Card>
           <Col lg="3"></Col>
@@ -154,4 +160,4 @@ function ArticleCard() {
   );
 }
 
-export default ArticleCard;
+export default ArticleCard2;

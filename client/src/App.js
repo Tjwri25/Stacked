@@ -5,8 +5,9 @@ import "./App.css";
 import Home from "./pages/Home"
 import Search from "./pages/Search";
 import Articles from "./pages/Articles";
+import Articles2 from "./pages/Articles2";
 import Dan from "./pages/Dan";
-import ArticleForm from "./pages/ArticleForm";
+import ArticleForm2 from "./pages/ArticleForm2";
 import Allana from "./pages/Allana"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -33,14 +34,17 @@ function App() {
           <Route exact path="/articles">
             <Articles />
           </Route>
+          <Route exact path="/articles2">
+            <Articles2 />
+          </Route>
           <Route exact path="/dan">
             <Dan />
           </Route>
           <Route exact path="/allana">
             <Allana />
           </Route>
-          <Route exact path="/articleForm">
-            <ArticleForm />
+          <Route exact path="/addarticleForm">
+            <ArticleForm2 />
           </Route>
         </Switch>
       </div>
