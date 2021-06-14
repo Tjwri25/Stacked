@@ -14,7 +14,8 @@ This application allows the public and more specifically former bootcamp student
 
 ## User Story
 
-```AS A bootcamp student
+```
+AS A bootcamp student
 I WANT to be able to search for specific code examples within a large repository
 SO THAT I can find the code I am looking for in a timely manner
 ```
